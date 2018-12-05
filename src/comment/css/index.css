@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+ }
+ ul{
+ 	margin: 0;
+ 	padding: 0;
+ 	list-style: none;
+ }
+ .App{
+ 	width: 480px;
+ 	padding: 20px;
+ 	margin: 0 auto;
+ 	box-shadow: 0 0 5px #000;
+ 	overflow: hidden;
+ }
+  .App h2{
+  	text-align: center;
+  }
+  .nav{
+    width: 100%;
+    display: flex;
+    text-align: center;
+  }
+   .nav a{
+    flex: 1;
+   }
+  .active{
+    color: red;
+  }
+  .text{
+  	width: 460px;
+  	height: 42px;
+  	padding: 0 10px;
+  	font: 22px/42px "微软雅黑";
+  }
+  .list{
+  	margin-top:20px;
+  }
+  .list li{
+  	font: 16px/40px "微软雅黑";
+  	border-bottom: 1px solid #000
+  }
+  .list li span{
+  	margin-left: 10px;
+    display: inline-block;
+    width: 89%;
+  }
+  .list .done span{
+    text-decoration: line-through;
+  }
+  .list li a{
+   	float: right;
+   	background-color: #c8c4c4;
+   	border-radius: 50%;
+   	color: #fff;
+   	width: 20px;
+   	height: 20px;
+   	margin-top: 10px;
+   	line-height: 19px;
+   	text-align: center;
+   	opacity: 0;
+    transform: rotate(720deg) scale(0);
+   	cursor: pointer;
+    transition: .5s transform,.3s opacity;
+   }
+   .list li:hover a{
+		opacity: 1;
+    transform: rotate(0) scale(1);
+   }
+   .list li a:hover{
+   		background-color: #666;
+      /*transform: rotate(0) scale(1);*/
+   }
+    .list li .edit{
+      display: none;
+    }
+    .list li .edit .todo-input{
+      width: 93%;
+      padding: 0 10px;
+      line-height: 40px;
+    }
+
+  .bt-left{
+  	float: left;
+  	font-size: 14px;
+  	color: #666;
+  }
+  .bt-right{
+  	float: right;
+  	font-size: 14px;
+  	color: #666;
+  }
